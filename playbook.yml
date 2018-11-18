@@ -7,7 +7,7 @@
       yum: name=httpd state=present
 
     - name: Amending webserver configuration file
-      copy: dest=/var/www/html/index.html content="This is my first ever webserver playbook with Jenkins automation. More to come, stay tuned."
+      copy: dest=/var/www/html/index.html content="This is my first ever webserver playbook with Jenkins automation, continueous deployment. More to come, stay tuned."
 
     - name: Starting webserver services
       service: name=httpd state=started
